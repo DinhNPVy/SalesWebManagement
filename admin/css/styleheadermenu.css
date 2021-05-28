@@ -1,0 +1,89 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .headermenu {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar-admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    
+  }
+  .navbar-admin > ul {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-admin ul li {
+    position: relative;
+    height: 100%;
+  }
+  .navbar-admin ul li a {
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    transition: all 0.2s ease;
+  }
+  
+  .navbar-admin ul li a .icon {
+    width: 25px;
+    display: inline-block;
+  }
+  .navbar-admin ul li a:hover,
+  .navbar-admin ul li a.a_parent.active,
+  .navbar-admin .dd_menu ul li a:hover,
+  .navbar-admin .dd_menu ul li a.active {
+    background-color: rgb(211, 206, 206);
+  }
+  
+  .navbar-admin ul li:hover .dd_menu {
+    display: block;
+  }
+  
+  .navbar-admin .dd_menu {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    display: none;
+  }
+  .navbar-admin .dd_menu ul li a {
+    text-align: left;
+    padding: 20px 10px 5px 10px;
+    background-color: rgb(211, 206, 206);
+  }
+  .navbar-admin .dd_menu ul li a span.text
+  {
+      font-size: 14px;
+  }
+  
+  .navbar-admin .dd_menu::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent transparent rgb(211, 206, 206) transparent;
+  }
+  
+  .navbar-admin ul li a.a_parent.active + .dd_menu {
+    display: block;
+  }
+  
+  
+  .navbar-admin ul li a.dd_menu_a.active + .dd_submenu {
+    display: block;
+  }
+  
