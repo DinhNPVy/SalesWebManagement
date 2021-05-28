@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['login'])) {
                         <div class="col-lg-12 ">
                             <div class="fa fa-user">Username
 
-                                <input class="col-lg-4 mb-2 form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus" type="text" type="text" placeholder="Enter Your Username" name="email" />
+                                <input class="col-lg-4 mb-2 form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus" type="text" type="text" placeholder="Enter Your Email" name="email" />
 
                             </div>
                         </div>
