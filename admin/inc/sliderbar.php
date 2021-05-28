@@ -117,7 +117,7 @@
              </ul>
            </div>
          </li>
-         <li><a href="#" class="a_parent">
+         <!-- <li><a href="#" class="a_parent">
              <div class="wrap">
                <span class="icon"></span>
                <span class="text">
@@ -210,7 +210,7 @@
                </li>
              </ul>
            </div>
-         </li>
+         </li> -->
        </ul>
      </div>
    </div>
