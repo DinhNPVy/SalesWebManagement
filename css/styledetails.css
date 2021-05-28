@@ -1,0 +1,15 @@
+*
+{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+.row{
+    display: flex
+}
+.pro-detail-content.my-3 {
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+

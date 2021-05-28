@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    
+}
+.container >.navbar-collapse
+{
+    margin-left: 8%;
+    margin-right: 0;
+    padding: 25px;
+}
+.navbar-header
+{
+    padding: 25px;
+    padding-left: 10%;
+}
+
+

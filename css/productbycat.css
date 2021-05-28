@@ -1,0 +1,17 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu:hover
+{
+     text-align: center;
+     background-color: white;
+     position: absolute;
+     top: 50px;
+     width: 100px;
+
+                
+
+}
