@@ -1,16 +1,11 @@
 <?php
 include 'inc/header.php';
 ?>
-<?php
-// if (isset($_GET['orderid']) || $_GET['orderid'] == 'order') {
-//     $customer_id = Session::get("customer_id");
-//     $insertOrder = $ct->insertOrder($customer_id);
-//     $delCart = $ct->del_all_dataCart();
-//     // '<script>window.loaction = success.php</script>';
-//     @header("Location: success.php");
-// }
-?>
 
+
+<link rel="stylesheet" href="css/styledetails.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/materialdesignicons.min.css">
 <div class="container">
     <h1 style="color: green;">Success Order</h1>
     <?php
@@ -26,7 +21,7 @@ include 'inc/header.php';
     ?>
     <p>Total Price You Have Bought From My Website: <?php $vat = $amount * 0.2;
                                                     $total = $vat + $amount;
-                                                    echo $total;  ?> </p>
+                                                    echo $fm->format_currency($total);  ?> </p>
     <p>We will contact as soon as possiable. Please see your order details here <a href="orderdetail.php">Click Here!</a></p>
 </div>
 
