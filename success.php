@@ -1,16 +1,11 @@
 <?php
 include 'inc/header.php';
 ?>
-<?php
-// if (isset($_GET['orderid']) || $_GET['orderid'] == 'order') {
-//     $customer_id = Session::get("customer_id");
-//     $insertOrder = $ct->insertOrder($customer_id);
-//     $delCart = $ct->del_all_dataCart();
-//     // '<script>window.loaction = success.php</script>';
-//     @header("Location: success.php");
-// }
-?>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7017cdb001b60c29a456283d8a1e4fb29434e9e6
 <link rel="stylesheet" href="css/styledetails.css">
 <link rel="stylesheet" href="css/style.min.css">
 <link rel="stylesheet" href="css/materialdesignicons.min.css">

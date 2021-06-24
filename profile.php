@@ -7,18 +7,7 @@ if ($login_check == false) {
     header("Location:login.php");
 }
 ?>
-<?php
-// if (!isset($_GET['productid']) || $_GET['productid'] == NULL) {
-//     echo "<script> window.location = '404.php' </script>";
-// } else {
-//     $id = $_GET["productid"];
-// }
-// if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['submit'])) {
-//     $quantity = $_POST["quantity"];
-//     $addCart = $ct->addToCart($quantity, $id);
-// }
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 
