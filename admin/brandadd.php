@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 <div class="gird_10">
     <div class="box round first grid">
-        <h2>Thêm thương hiệu</h2>
+        <h2>Add Brand</h2>
         <div class="block copyblock">
             <?php
             if (isset($insertBrand)) {
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <table class="form">
                     <tr>
                         <td>
-                            <input class="col-lg-12 mb-2 form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus" type="text" name="brandName" placeholder="Thêm thương hiệu..." />
+                            <input class="col-lg-12 mb-2 form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus" type="text" name="brandName" placeholder="Please Add Brand..." />
                         </td>
                     </tr>
                     <tr>
