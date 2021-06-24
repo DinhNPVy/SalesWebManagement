@@ -3,50 +3,74 @@ include 'inc/header.php';
 //  
 ?>
 <!-- <link rel="stylesheet" href="css/product.css"> -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+
+
+
+
+<link rel="stylesheet" href="\">
+<link rel="stylesheet" href="css/styleslider.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/owlcarousel.css">
+<link rel="stylesheet" href="css/flags.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/style.min.css">
 
 <body>
+    <div class="container">
+        <div class="row" style="    margin-right: -10px;margin-left: -10px;">
+            <div class="xv-product-slides grid-view products" data-thumbnail="figure .xv-superimage" data-product=".xv-product-unit">
+                <div class="row">
+                    <ul class="breadcrumb">
+                        <li><a href="newproduct.php"><i class="fas fa-award" style="font-size:40px; color:red;"></i>
+                                <span style="font-size: 30px;">New Products</span>
+                            </a></li>
+                        <!-- <li><a href="#">Products</a></li> -->
 
-    <div class="col-md-12">
-        <div class="row">
+                    </ul>
+                    <?php
+                    $productNew = $product->getProductNew();
+                    if ($productNew) {
+                        while ($result_new = $productNew->fetch_assoc()) {
+                    ?>
+                            <div class="col-md-3">
+                                <div class="xv-product-unit">
+                                    <div class="xv-product ">
+                                        <figure>
+                                            <a href="details.php?productid=<?php echo $result_new["productId"] ?>"><img class="xv-superimage" src="admin/uploads/<?php echo $result_new["image"] ?>" alt="" /></a>
+                                            <figcaption>
+                                                <ul class="style1" style="font-size: 13.4px;">
+                                                    <li><a data-qv-tab="#qvt-wishlist" class="btn-cart flytoQuickView btn-square btn-blue" href="details.php?productid=<?php echo $result_new["productId"] ?>"><i class="fa fa-eye"></i></a></li>
 
+                                                </ul>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="xv-product-content">
+                                            <h3><a href="details.php?productid=<?php echo $result_new["productId"] ?>"><?php echo $result_new["productName"] ?></a></h3>
+                                            <p>Aenean sollicitudin, nec sagittis sem lorem quist bibe dum auctor, nisi elit consequat ipsum. Duis sed odio sit amet nibh vulputate cursus a nec.</p>
 
-            <h3 style="color: red;">New Products</h3>
-            <?php
-            $productNew = $product->getProductNew();
-            if ($productNew) {
-                while ($result_new = $productNew->fetch_assoc()) {
-            ?>
-                    <div class=" col-lg-4 col-md-6">
-                        <div class="product-item mt-4">
-                            <div class="product-img rounded border position-relative">
-                                <a href="details.php"><img height="300px" src="admin/uploads/<?php echo $result_new["image"] ?>" /> </a>
-                                <!-- <span class="badge bg-primary position-absolute top-0 start-0 py-2 mt-2 ms-2">-20%</span> -->
-                                <div class="hover-content text-center bg-white position-absolute top-50 start-50 translate-middle w-100 py-2">
-                                    <a href="cart.php"><i class="fa fa-shopping-cart fs-22 me-3 pe-3 fw-bolder pro-icon border-end"></i></a>
-                                    <a href="details.php?productid=<?php echo $result_new["productId"] ?>"><i class="fa fa-eye fs-22 me-3 pe-3 fw-bolder pro-icon border-end active"></i></a>
-                                    <a href="details.php?productid=<?php echo $result_new["productId"] ?>" class="details"><i class="fa fa-heart fs-22 fw-bolder pro-icon"></i></a>
-                                </div>
-                            </div>
-                            <div class="pro-content my-3">
-                                <div class="price d-inline-block">
-                                    <ins class="pe-1 fs-15 fw-semibold text-decoration-none"><?php echo $fm->validation($result_new["price"] . " " . "VNĐ") ?></ins>
-                                    <!-- <del class="text-muted fs-15">$30.00</del> -->
-                                    <div class="rating d-inline-block ms-5 ps-4">
-                                        5.0<i class="fa fa-star" style="color: yellow;"></i>
-
+                                            <ul class="extra-links">
+                                                <li><a href="#"><i class="fa fa-heart"></i>Wishlist</a></li>
+                                                <li><a href="#"><i class="fa fa-exchange"></i>Compare</a></li>
+                                                <li><a href="#"><i class="fa fa-expand"></i>Expand</a></li>
+                                            </ul>
+                                            <!--ul-->
+                                            <div class="xv-rating stars-5"></div>
+                                            <span class="xv-price"><?php echo $fm->format_currency($result_new["price"]) ?></span>
+                                            <!-- <a data-qv-tab="#qvt-cart" href="#" class="product-buy flytoQuickView">Buy</a> -->
+                                        </div>
+                                        <!--xv-product-content-->
                                     </div>
+                                    <!--xv-product(list-view)-->
                                 </div>
-                                <a href="#">
-                                    <h5 class="text-muted fw-normal lh-base my-1"><?php echo $result_new["productName"] ?></h5>
-                                </a>
                             </div>
-                        </div>
-                    </div>
-            <?php
-                }
-            }
-            ?>
-
+                    <?php
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
 </body>
