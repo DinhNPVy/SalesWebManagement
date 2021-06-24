@@ -16,7 +16,7 @@ if (isset($_GET['productid'])) {
     <div class="container">
         <div class="cartoption">
             <div class="cartpage">
-                <h3>Danh sách sản phẩm</h3>
+                <h3>List Of Products</h3>
                 <?php
                 if (isset($delProduct)) {
                     echo $delProduct;
@@ -78,7 +78,7 @@ if (isset($_GET['productid'])) {
                                                     <tr>
                                                         <td><?php echo $i ?></td>
                                                         <td><?php echo $result['productName'] ?></td>
-                                                        <td><?php echo $result['price'] ?></td>
+                                                        <td><?php echo $fm->format_currency($result['price'])  ?></td>
                                                         <td><img height="80" src="uploads/<?php echo $result['image'] ?>" alt=""></td>
                                                         <td><?php echo $result['catName'] ?></td>
                                                         <td><?php echo $result['brandName'] ?></td>
@@ -86,9 +86,9 @@ if (isset($_GET['productid'])) {
                                                         <td>
                                                             <?php
                                                             if ($result['type'] == 1) {
-                                                                echo 'Feathered';
+                                                                echo 'Featured';
                                                             } else {
-                                                                echo 'Non-Feathered';
+                                                                echo 'Non-Featured';
                                                             }
                                                             ?>
                                                         </td>
