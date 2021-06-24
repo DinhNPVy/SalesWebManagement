@@ -1,6 +1,6 @@
 <?php
 
-use PhpMyAdmin\Display\Results;
+//use PhpMyAdmin\Display\Results;
 
 include 'inc/header.php'; ?>
 <?php include 'inc/sliderbar.php'; ?>
