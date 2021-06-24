@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <div class="gird_10">
     <div class="box round first grid">
-        <h2>Sửa danh mục</h2>
+        <h2>Edit Brand</h2>
 
         <div class="block copyblock">
             <?php
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <table class="form">
                             <tr>
                                 <td>
-                                    <input class="col-lg-4 mb-2 form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus" type="text" value="<?php echo $result["brandName"]; ?>" name="brandName" placeholder="Vui lòng sửa danh mục thương hiệu..." class="medium" />
+                                    <input class="col-lg-12 mb-2 form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus" type="text" value="<?php echo $result["brandName"]; ?>" name="brandName" placeholder="Please Correct The Brand Name..." class="medium" />
                                 </td>
                             </tr>
                             <tr>
