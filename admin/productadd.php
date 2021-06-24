@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 <link rel="stylesheet" href="css/layout.css">
 <div class="gird_10">
     <div class="box round first grid">
-        <h2>Thêm sản phẩm</h2>
+        <h2>Add Products</h2>
         <div class="block">
             <?php
             if (isset($insertProduct)) {
