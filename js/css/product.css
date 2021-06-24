@@ -1,0 +1,30 @@
+
+.hh-box{
+   display: flex;
+    margin: 25px 5px 5px 5px;
+    padding: 10px 5px 6px 7px;
+    box-shadow: 0 0 5px silver;
+}
+.hh-box:hover{
+    box-shadow: 0 0 5px aqua;
+}
+img{
+    
+    width: 100px;
+    height: 100px;
+}
+
+.hh-box:hover .sale{
+    opacity: 0.4;
+}
+
+.hh-box:hover .icon{
+   opacity: 0.4;
+}
+
+.price{
+    font-weight: bold;
+    left: 8px;
+    bottom: 8px;
+}
+

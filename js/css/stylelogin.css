@@ -1,0 +1,84 @@
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.background{
+    position: relative;
+    width: 50px;
+    display: flex;
+    
+
+}
+.container
+{
+    height: auto;
+   
+    top: 185px;
+    left: 604px;
+
+    position: absolute;
+    width: max-content;
+
+}
+h3{
+    padding-left: 85px;
+    color: rgb(64, 108, 213);
+
+}
+.form-group .col-lg-7
+{
+    height: 20;
+    margin-top: 5px;
+    
+}
+.button{
+    text-transform: none;
+    overflow: visible;
+    
+  
+}
+.btn{
+    position: relative;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    border: 1px solid transparent;
+}
+.btn-rounded{
+    border-radius: 20px;
+}
+.btn-block{
+    display: block;
+    width: 100%;
+    
+}
+
+
+.error{
+    color: crimson;
+    margin-top: 25px;
+}
+.btn .btn-primary .btn-lg .btn-block .btn-rounded
+{
+    cursor: pointer;
+
+    
+}
+
+span{
+    
+    cursor: pointer;
+
+}
+
+.form-group > .row> .col-lg-7{
+    position: relative;
+    
+}
+span.eye
+{
+    position: absolute;
+    right: 42px;
+    bottom: 8px;
+    
+}

@@ -56,7 +56,7 @@ class Session
     {
         self::init();
         if (self::get("customer_signin") == true) {
-            header("Location:order.php");
+            header("Location:index.php");
         }
     }
 }
