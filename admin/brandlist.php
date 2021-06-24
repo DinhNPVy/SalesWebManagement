@@ -16,7 +16,7 @@ if (isset($_GET['delid'])) {
     <div class="container">
         <div class="cartoption">
             <div class="cartpage">
-                <h3>Danh sách thương hiệu</h3>
+                <h3>Brand List</h3>
                 <?php
                 if (isset($delbrand)) {
                     echo $delbrand;
