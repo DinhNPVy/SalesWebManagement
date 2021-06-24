@@ -7,6 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/stylesliderbar.css?v=<?php echo time() ?>">
    <script src="js/sliderbar.js"></script>
+
  </head>
 
  <body>
@@ -16,8 +17,8 @@
          <li>
            <a href="#" class="a_parent">
              <div class="wrap">
-               <span class="icon"></span>
-               <span class="text"> DANH MỤC </span>
+               <span class="icon"><img src="img/clipboard-list-solid.svg" alt="" style="height: 20px;"></span>
+               <span class="text"> CATEGORY </span>
              </div>
            </a>
 
@@ -26,9 +27,9 @@
                <li>
                  <a href="catadd.php" class="dd_menu_a">
                    <div class="wrap">
-                     <span class="icon"></span>
+
                      <span class="text">
-                       Thêm danh mục
+                       Add category
                      </span>
 
                    </div>
@@ -37,9 +38,9 @@
                <li>
                  <a href="catlist.php" class="dd_menu_a">
                    <div class="wrap">
-                     <span class="icon"></span>
+
                      <span class="text">
-                       Danh mục sản phẩm
+                       Product category
                      </span>
 
                    </div>
@@ -51,9 +52,9 @@
 
          <li><a href="#" class="a_parent">
              <div class="wrap">
-               <span class="icon"></span>
+               <span class="icon"><img src="img/code-branch-solid.svg" style="height: 20px;" alt=""></span>
                <span class="text">
-                 THƯƠNG HIỆU
+                 BRAND
                </span>
 
              </div>
@@ -62,9 +63,9 @@
              <ul>
                <li><a href="brandadd.php" class="dd_menu_a">
                    <div class="wrap">
-                     <span class="icon"></span>
+
                      <span class="text">
-                       Thêm thương hiệu
+                       Add Brand
                      </span>
 
                    </div>
@@ -72,9 +73,9 @@
                </li>
                <li><a href="brandlist.php" class="dd_menu_a">
                    <div class="wrap">
-                     <span class="icon"></span>
+
                      <span class="text">
-                       Danh sách thương hiệu
+                       Brand List
                      </span>
 
                    </div>
@@ -85,9 +86,9 @@
          </li>
          <li><a href="#" class="a_parent">
              <div class="wrap">
-               <span class="icon"></span>
+               <span class="icon"><img src="img/product-hunt-brands.svg" style="height: 20px;" alt=""></span>
                <span class="text">
-                 SẢN PHẨM
+                 PRODUCT
                </span>
 
              </div>
@@ -96,53 +97,18 @@
              <ul>
                <li><a href="productadd.php" class="dd_menu_a">
                    <div class="wrap">
-                     <span class="icon"></span>
+
                      <span class="text">
-                       Thêm sản phẩm
+                       Add Products
                      </span>
 
                    </div>
                  </a>
                </li>
                <li><a href="productlist.php" class="dd_menu_a">
-                   <div class="wrap">
-                     <span class="icon"></span>
+                   <div class="wrap"> <span class="icon"></span>
                      <span class="text">
-                       Danh sách sản phẩm
-                     </span>
-
-                   </div>
-                 </a>
-               </li>
-             </ul>
-           </div>
-         </li>
-         <!-- <li><a href="#" class="a_parent">
-             <div class="wrap">
-               <span class="icon"></span>
-               <span class="text">
-                 Danh mục
-               </span>
-
-             </div>
-           </a>
-           <div class="dd_menu">
-             <ul>
-               <li><a href="catadd.php" class="dd_menu_a">
-                   <div class="wrap">
-                     <span class="icon"></span>
-                     <span class="text">
-                       Thêm danh mục
-                     </span>
-
-                   </div>
-                 </a>
-               </li>
-               <li><a href="atlist.php" class="dd_menu_a">
-                   <div class="wrap">
-                     <span class="icon"></span>
-                     <span class="text">
-                       Danh sách sản phẩm
+                       List Of Products
                      </span>
 
                    </div>
@@ -152,6 +118,41 @@
            </div>
          </li>
          <li><a href="#" class="a_parent">
+             <div class="wrap">
+               <span class="icon"><img src="img/sliders-h-solid.svg" style="height: 20px;" alt=""></span>
+               <span class="text">
+                 SLIDER
+               </span>
+
+             </div>
+           </a>
+           <div class="dd_menu">
+             <ul>
+               <li><a href="slideradd.php" class="dd_menu_a">
+                   <div class="wrap">
+
+                     <span class="text">
+                       Add Slider
+                     </span>
+
+                   </div>
+                 </a>
+               </li>
+               <li><a href="sliderlist.php" class="dd_menu_a">
+                   <div class="wrap">
+
+                     <span class="text">
+                       Slider List
+                     </span>
+
+                   </div>
+                 </a>
+               </li>
+             </ul>
+           </div>
+         </li>
+
+         <!-- <li><a href="#" class="a_parent">
              <div class="wrap">
                <span class="icon"></span>
                <span class="text">
@@ -240,7 +241,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 </head> -->
 
- <!-- 
+ <!--
 <div class="nav-bottom">
   <div class="container">
     <ul class="nav page-navigation">
