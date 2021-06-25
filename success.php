@@ -2,10 +2,7 @@
 include 'inc/header.php';
 ?>
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 7017cdb001b60c29a456283d8a1e4fb29434e9e6
 <link rel="stylesheet" href="css/styledetails.css">
 <link rel="stylesheet" href="css/style.min.css">
 <link rel="stylesheet" href="css/materialdesignicons.min.css">
