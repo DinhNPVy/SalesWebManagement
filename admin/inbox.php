@@ -111,7 +111,7 @@ if (isset($_GET['delid'])) {
                                                             if ($result['status'] == 0) {
                                                             ?>
 
-                                                                <a href="?deliveredid=<?php echo $result['id'] ?>&price=<?php echo $result['price'] . '' ?>&time=<?php echo $result['date_order'] ?> ">Transporting</a>
+                                                                <a href="?deliveredid=<?php echo $result['id'] ?>&price=<?php echo $result['price'] . '' ?>&time=<?php echo $result['date_order'] ?> ">Pending</a>
                                                             <?php
                                                             } else if ($result['status'] == 1) {
                                                             ?>
